@@ -26,10 +26,10 @@ mkdir ${AIRFLOW_HOME}/dags
 airflow db init
 airflow users create \
       --role Admin \
-      --username admin2 \
-      --email admin2 \
-      --firstname admin2 \
-      --lastname admin2 \
+      --username admin \
+      --email admin \
+      --firstname admin \
+      --lastname admin \
       --password admin
 ```
 ## Start the scheduler
