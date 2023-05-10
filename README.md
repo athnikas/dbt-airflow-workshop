@@ -35,6 +35,7 @@ Intstructions can be found in the following [link](https://itsfoss.com/reset-lin
 Edit your `~/.bashrc` file and add 3 envrionmental variables as follows:
 
 ```
+nano ~/.bashrc
 export GIT_USER=<YOUR GITHUB USERNAME>
 export GIT_PASSWORD=<YOUR GITHUB API ACCESS TOKEN> #generate from developer settings
 export GIT_EMAIL=<THE EMAIL YOU REGISTERED ON GITHUB>
