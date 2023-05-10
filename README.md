@@ -1,7 +1,5 @@
 # dbt-airflow-workshop
 
-# Setting up a development environment for the workshop
-
 ## What we need
 
 ```
