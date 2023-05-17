@@ -21,7 +21,7 @@ We need Windows Subsystem for Linux enabled in order to run Ubuntu. To check if 
     ```
 
 2. Reset your user's password (if you already had an Ubuntu account and forgotten the password...)
-Intstructions can be found in the following [link](https://itsfoss.com/reset-linux-password-wsl/).
+Instructions can be found in the following [link](https://itsfoss.com/reset-linux-password-wsl/).
 
 3. If you do not have WSL enabled, execute the following steps.
 
@@ -41,7 +41,7 @@ export GIT_PASSWORD=<YOUR GITHUB API ACCESS TOKEN> #generate from developer sett
 export GIT_EMAIL=<THE EMAIL YOU REGISTERED ON GITHUB>
 ```
 
-Through the above you can authenticate and commit changes to your repos repo. Helper command is:
+Through the above you can authenticate and commit changes to your repos. Helper command is:
 
 ```
 source ~/.bashrc
