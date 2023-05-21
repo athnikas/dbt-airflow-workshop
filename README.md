@@ -1,6 +1,6 @@
 # dbt-airflow-workshop
 
-## What we need
+## Dependencies
 
 ```
 WSL2
@@ -10,9 +10,9 @@ Github Account
 Docker 5:20.10.21~3-0~ubuntu-jammy
 ```
 
-## Prerequisites for WSL
+## WSL Installation
 
-We need Windows Subsystem for Linux enabled in order to run Ubuntu. To check if it is already enabled do the following:
+We need Windows Subsystem for Linux enabled in order to run Ubuntu. To check if it is already enabled, do the following:
 1. Open Windows CMD and execute the following commands. Under the version column, it should state 2. If not, then upgrade (to be implemented).
 
     ```
@@ -20,17 +20,23 @@ We need Windows Subsystem for Linux enabled in order to run Ubuntu. To check if 
     wsl --set-default-version 2 # if it is installed and version is 1
     ```
 
-2. Reset your user's password (if you already had an Ubuntu account and forgotten the password...)
+2. Reset your user's password (if you already had an Ubuntu account and forgotten the password like me... 🥶)
 Instructions can be found in the following [link](https://itsfoss.com/reset-linux-password-wsl/).
 
-3. If you do not have WSL enabled, execute the following steps.
+3. If you do not have WSL enabled, use the `Install Using Windows Features` guide in the following [link](https://techcommunity.microsoft.com/t5/windows-11/how-to-install-the-linux-windows-subsystem-in-windows-11/m-p/2701207).
 
 ## Ubuntu Installation
 
+To install Ubuntu on your machine use the guide (steps 1, 2, 3) in the following [link](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#3-download-ubuntu).
+
 ## Visual Studio Code Installation
+
+Download and install from the official [link](https://code.visualstudio.com/download).
 
 ## Github Account
 
+First create a Github account using the guide in the following [link](https://learn.microsoft.com/en-us/visualstudio/version-control/git-create-github-account?view=vs-2022).
+Then generate a personal access token using the guide in the following [link](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
 Edit your `~/.bashrc` file and add 3 envrionmental variables as follows:
 
@@ -39,12 +45,12 @@ nano ~/.bashrc
 export GIT_USER=<YOUR GITHUB USERNAME>
 export GIT_PASSWORD=<YOUR GITHUB API ACCESS TOKEN> #generate from developer settings
 export GIT_EMAIL=<THE EMAIL YOU REGISTERED ON GITHUB>
+source ~/.bashrc
 ```
 
 Through the above you can authenticate and commit changes to your repos. Helper command is:
 
 ```
-source ~/.bashrc
 git config --global credential.helper '!f() { sleep 1; echo "username=${GIT_USER}"; echo "password=${GIT_PASSWORD}"; }; f'
 ```
 
