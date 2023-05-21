@@ -1,2 +1,3 @@
 airflow/
 airflow_env/
+workshop/dbt/logs/
