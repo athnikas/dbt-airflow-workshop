@@ -20,8 +20,7 @@ We need Windows Subsystem for Linux enabled in order to run Ubuntu. To check if 
     wsl --set-default-version 2 # if it is installed and version is 1
     ```
 
-2. Reset your user's password (if you already had an Ubuntu account and forgotten the password like me... 🥶)
-Instructions can be found in the following [link](https://itsfoss.com/reset-linux-password-wsl/).
+2. Reset your user's password (if you already had an Ubuntu account and forgotten the password like me... 🥶). Instructions can be found in the following [link](https://itsfoss.com/reset-linux-password-wsl/).
 
 3. If you do not have WSL enabled, use the `Install Using Windows Features` guide in the following [link](https://techcommunity.microsoft.com/t5/windows-11/how-to-install-the-linux-windows-subsystem-in-windows-11/m-p/2701207).
 
