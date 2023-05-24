@@ -4,7 +4,7 @@
 ```
 pip3 install virtualenv
 python3 -m virtualenv airflow_env
-echo 'source ~/dbt-airflow-workshop airflow_env/bin/activate' >> ~/.bashrc
+echo 'source ~/dbt-airflow-workshop/airflow_env/bin/activate' >> ~/.bashrc
 source ~/.bashrc
 ```
 
