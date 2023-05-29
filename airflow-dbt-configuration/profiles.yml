@@ -1,0 +1,12 @@
+postgres_dbt:
+  outputs:
+    dev:
+      dbname: db
+      host: 172.19.0.2
+      pass: root
+      port: 5432
+      schema: dbt
+      threads: 1
+      type: postgres
+      user: root
+  target: dev
